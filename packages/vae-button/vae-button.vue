@@ -2,6 +2,7 @@
   <button
     class="vae-button"
     :disabled="disabled"
+    @click="handleClick"
     :class="[
       `vae-button--${type}`,
       {
@@ -30,6 +31,11 @@ export default {
     },
     disabled: {
       type: Boolean
+    }
+  },
+  methods: {
+    handleClick(e) {
+      this.$emit("click", e);
     }
   }
 };
