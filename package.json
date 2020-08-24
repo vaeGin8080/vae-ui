@@ -1,10 +1,10 @@
 {
   "name": "vae-ui",
   "author": "vae",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "private": false,
   "description": "基于vue的UI库",
-  "main": "vae-ui.umd.min.js",
+  "main": "dist/vae-ui.umd.min.js",
   "repository ": "https://github.com/vaeGin8080/vae-ui/tree/dev",
   "keywords": [
     "vae-ui",
@@ -12,12 +12,14 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
+    "start": "npm run serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "element-ui": "^2.13.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
